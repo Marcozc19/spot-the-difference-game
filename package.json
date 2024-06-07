@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/model-viewer": "^3.5.0",
+    "dotenv": "^16.4.5",
+    "echo3d": "^0.3.13",
     "express": "^4.19.2"
   }
 }
