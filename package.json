@@ -1,0 +1,19 @@
+{
+  "name": "spot-the-difference-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/model-viewer": "^3.5.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "echo3d": "^0.3.13",
+    "express": "^4.19.2"
+  }
+}

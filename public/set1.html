@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spot the Difference Game</title>
+  <!-- A-Frame library -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- echo3D SDK -->
+  <script src="https://cdn.echo3d.co/scripts/echo3D.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Spot the difference between the two pictures</h2>
+    <h2>and see what they look like in real life!</h2>
+    <h3>There are a total of <text style="color: red;">3</text> differences</h3>
+    <div id="message" class="message"></div>
+  </div>
+  <div class="game-container">
+    <div class="images">
+      <div id="image-loading-indicator" class="loading-indicator" style="position: absolute; top:50%; left: 50%;translate: (-50%, -50%);">Loading...</div>
+      <div class="image-wrapper">
+        <img id="image1" src="" alt="Image 1">
+        <canvas id="canvas1" class="overlay-canvas"></canvas>
+      </div>
+      <div class="image-wrapper">
+        <img id="image2" src="" alt="Image 2">
+        <canvas id="canvas2" class="overlay-canvas"></canvas>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loading-indicator" class="loading-indicator">Loading...</div>
+        <model-viewer id="model-viewer" src="" auto-rotate camera-controls></model-viewer>
+        <h3>Scan the following QR code with your phone and see it in real life!</h3>
+        <div>
+          <div id="qr-loading-indicator" class="loading-indicator">Loading...</div>
+          <img id="qrcode" src=""/>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button type="button" onclick="" class="action-button" id="back-button">Back</button>
+      <button type="button" onclick="" class="action-button" id="next-button">Done</button>
+    </div>
+  </div>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
