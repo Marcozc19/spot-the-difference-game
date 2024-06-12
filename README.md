@@ -35,7 +35,7 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
        - You can find two sets of spot the difference images in ```/public/pics/```
        - Upload the two sets of images to your Echo3D platform.
        - Double click on the asset, go to ```Metadata&Tags```Add tags  ```sdf```, ```set<set number>``` and ```asset``` to the images.
-    ![image](public\pics\readme\pictag_demo.png)
+    ![image](public\pics\readme\assettag_demo.png)
        - *Note:* The ```set<set number>``` tag is used to group the images, if two images belong together, they should have the same ```set<set number>``` tag. e.g. ```set1``` and ```set2```.
    2. 3D models
       1. Downloading the assets
