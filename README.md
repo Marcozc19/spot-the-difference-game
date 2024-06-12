@@ -35,9 +35,10 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
        - You can find two sets of spot the difference images in ```/public/pics/```
        - Upload the two sets of images to your Echo3D platform.
        - Double click on the asset, go to ```Metadata&Tags```Add tags  ```sdf```, ```set<set number>``` and ```asset``` to the images.
-    ![image](public\pics\readme\assettag_demo.png)
+    
        - *Note:* The ```set<set number>``` tag is used to group the images, if two images belong together, they should have the same ```set<set number>``` tag. e.g. ```set1``` and ```set2```.
-   2. 3D models
+    ![image](public\pics\readme\pictag_demo.png)
+   1. 3D models
       1. Downloading the assets
        - You should create an account on [sketchfab](https://sketchfab.com/), and find any model you like to download.
        - For reference, I used these models:
@@ -52,7 +53,7 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
        - Same thing, Add tags ```sdf```, ```set<set number>``` and ```asset``` to the 3D models.     
        - *Note:* The ```set<set number>``` tag is used to identify the set of images and 3D models, be sure to name the same asset with the same set number as the image.
     ![image](public\pics\readme\assettag_demo.png)
-3. **Add Metadata to Assets**
+1. **Add Metadata to Assets**
    Now we need to add the coordinates of the assets in the picture so that the game knows which asset corresponds to which difference.
    - Go to the ```Metadata&Tags``` tab of the asset and add the coordinates of the asset in the picture.
    - The coordinates are in the format ```x```, ```y```, ```width```,```height```.
