@@ -250,6 +250,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   async function backToLastSet() {
     clearCanvas('canvas1');
     clearCanvas('canvas2');
+    
     if (setCount === 2) {
       history.back();
     } else {
