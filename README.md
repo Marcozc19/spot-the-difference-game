@@ -31,15 +31,15 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
    ```
 
 2. **Add items to your Echo3D account:**
-   1. Images
+   1. **Images**
        - You can find two sets of spot the difference images in ```/public/pics/```
        - Upload the two sets of images to your Echo3D platform.
        - Double click on the asset, go to ```Metadata&Tags```Add tags  ```sdf```, ```set<set number>``` and ```asset``` to the images.
     
        - *Note:* The ```set<set number>``` tag is used to group the images, if two images belong together, they should have the same ```set<set number>``` tag. e.g. ```set1``` and ```set2```.
     ![image](/public/pics/readme/pictag_demo.png)
-   1. 3D models
-      1. Downloading the assets
+   1. **3D models**
+      1. **Downloading the assets**
        - You should create an account on [sketchfab](https://sketchfab.com/), and find any model you like to download.
        - For reference, I used these models:
          - [Lion](https://sketchfab.com/3d-models/lion-fc6eeed56f6e44048be4e6051a77c072#download)
@@ -48,7 +48,7 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
          - [Cow](https://sketchfab.com/3d-models/cow-cd0d161476d64a9ca80f059bff3ccddd)
          - [Duck](https://sketchfab.com/3d-models/hybrid-duck-2e9082cfd8c444d9b3b1b20821a0e101#download)
          - [Chicken](https://sketchfab.com/3d-models/chicken-pepe-friend-e61d16e2c1d94b3ab75dfcee75569502)
-      2. Uploading the assets to your Echo3D account.
+      2. **Uploading the assets to your Echo3D account.**
        - Upload the downloaded of 3D models to your Echo3D platform.
        - Same thing, Add tags ```sdf```, ```set<set number>``` and ```asset``` to the 3D models.     
        - *Note:* The ```set<set number>``` tag is used to identify the set of images and 3D models, be sure to name the same asset with the same set number as the image.
