@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     document.getElementById('difference-count').textContent = count;
   }
 
+  //load 3d model assets
   async function loadAsset() {
     try {
       const response = await fetch(`/api/queryasset?set=set${setCount}`);
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   }
 
 
+  //load picture sets
   async function loadSet() {
     const image1 = document.getElementById('image1');
     const image2 = document.getElementById('image2');
@@ -123,6 +125,7 @@ document.addEventListener("DOMContentLoaded", async function() {
      console.error('Initial load failed.');
    }
 
+  //set QR code for pop up window
   function getQRCode(index) {
     const loadingIndicator = document.getElementById('qr-loading-indicator');
     const qrcode = document.getElementById('qrcode');
@@ -140,6 +143,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     qrcode.src = srcUrl;
   }
 
+  // set modelviewer src
   function setModelViewerSrc(index) {
     const modelViewer = document.getElementById('model-viewer');
     const loadingIndicator = document.getElementById('loading-indicator');
@@ -180,6 +184,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   }
 
+  //check validity of spotted area
   function isDifference(x, y) {
     for (let i = 0; i < globalAssets.length; i++) {
       const diff = globalAssets[i];
@@ -191,6 +196,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     return { index: -1 };
   }
 
+  //create red rectangle for spotted difference
   function createRect(coordinates, canvasId) {
     var canvas = document.getElementById(canvasId);
     var ctx = canvas.getContext('2d');
@@ -206,6 +212,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     ctx.strokeRect(coordinates.x, coordinates.y, coordinates.width, coordinates.height);
   }
 
+  //clear all rectangles
   function clearCanvas(canvasId) {
     var canvas = document.getElementById(canvasId);
     var ctx = canvas.getContext('2d');
@@ -226,6 +233,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   }
 
 
+  //Done button functionality
   async function checkDifferencesAndRedirect() {
     const totalDifferences = globalAssets.length;
     const message = document.getElementById('message');
@@ -246,7 +254,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   }
 
-
+  //Back button functionality
   async function backToLastSet() {
     clearCanvas('canvas1');
     clearCanvas('canvas2');
