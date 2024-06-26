@@ -68,7 +68,7 @@
 
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   left: 0;
   top: 0;
@@ -80,7 +80,7 @@
 
 .modal-content {
   background-color: #fff;
-  margin: 15% auto;
+  margin: auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 8px;

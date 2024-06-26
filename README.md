@@ -73,7 +73,7 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
     Create a ```bash``` file named ```.env``` in the root directory of the project and add your ```API_KEY``` and ```SEC_KEY``` as follows:
     ```bash
     API_KEY=<your-api-key>
-    API_SECRET=<your-api-secret>
+    SEC_KEY=<your-api-secret>
     ```
 2. **Install dependencies:**
     ```bash

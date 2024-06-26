@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
   <div class="header">
     <h2>Spot the difference between the two pictures</h2>
@@ -21,7 +23,8 @@
   </div>
   <div class="game-container">
     <div class="images">
-      <div id="image-loading-indicator" class="loading-indicator" style="position: absolute; top:50%; left: 50%;translate: (-50%, -50%);">Loading...</div>
+      <div id="image-loading-indicator" class="loading-indicator"
+        style="position: absolute; top:50%; left: 50%;translate: (-50%, -50%);">Loading...</div>
       <div class="image-wrapper">
         <img id="image1" src="" alt="Image 1">
         <canvas id="canvas1" class="overlay-canvas"></canvas>
@@ -39,7 +42,7 @@
         <h3>Scan the following QR code with your phone and see it in real life!</h3>
         <div>
           <div id="qr-loading-indicator" class="loading-indicator">Loading...</div>
-          <img id="qrcode" src=""/>
+          <img id="qrcode" src="" />
         </div>
       </div>
     </div>
@@ -50,4 +53,5 @@
   </div>
   <script src="/scripts/main.js"></script>
 </body>
+
 </html>
