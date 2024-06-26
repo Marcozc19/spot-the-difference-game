@@ -39,26 +39,26 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
     ![image](/public/pics/readme/pictag_demo.png)
    1. **3D models**
       1. **Downloading the assets**
-       - You should create an account on [sketchfab](https://sketchfab.com/), and find any model you like to download.
-       - For reference, I used these models:
-         - [Lion](https://sketchfab.com/3d-models/lion-fc6eeed56f6e44048be4e6051a77c072#download)
-         - [Monkey](https://sketchfab.com/3d-models/monkey-a066533da18f4caca0afc879bee0fe24)
-         - [Bird](https://sketchfab.com/3d-models/blue-jay-6233ad12a9be46e496e27233b9b3b7de#download)
-         - [Cow](https://sketchfab.com/3d-models/cow-cd0d161476d64a9ca80f059bff3ccddd)
-         - [Duck](https://sketchfab.com/3d-models/hybrid-duck-2e9082cfd8c444d9b3b1b20821a0e101#download)
-         - [Chicken](https://sketchfab.com/3d-models/chicken-pepe-friend-e61d16e2c1d94b3ab75dfcee75569502)
+          - You should create an account on [sketchfab](https://sketchfab.com/), and find any model you like to download.
+          - For reference, I used these models:
+            - [Lion](https://sketchfab.com/3d-models/lion-fc6eeed56f6e44048be4e6051a77c072#download)
+            - [Monkey](https://sketchfab.com/3d-models/monkey-a066533da18f4caca0afc879bee0fe24)
+            - [Bird](https://sketchfab.com/3d-models/blue-jay-6233ad12a9be46e496e27233b9b3b7de#download)
+            - [Cow](https://sketchfab.com/3d-models/cow-cd0d161476d64a9ca80f059bff3ccddd)
+            - [Duck](https://sketchfab.com/3d-models/hybrid-duck-2e9082cfd8c444d9b3b1b20821a0e101#download)
+            - [Chicken](https://sketchfab.com/3d-models/chicken-pepe-friend-e61d16e2c1d94b3ab75dfcee75569502)
       2. **Uploading the assets to your Echo3D account.**
-       - Upload the downloaded of 3D models to your Echo3D platform.
-       - Same thing, Add tags ```sdf```, ```set<set number>``` and ```asset``` to the 3D models.     
-       - ***Note:*** The ```set<set number>``` tag is used to identify the set of images and 3D models, be sure to name the same asset with the same set number as the image.
+          - Upload the downloaded of 3D models to your Echo3D platform.
+          - Same thing, Add tags ```sdf```, ```set<set number>``` and ```asset``` to the 3D models.     
+          - ***Note:*** The ```set<set number>``` tag is used to identify the set of images and 3D models, be sure to name the same asset with the same set number as the image.
     ![image](/public/pics/readme/assettag_demo.png)
 3. **Add Metadata to Assets**
-   Now we need to add the coordinates of the assets in the picture so that the game knows which asset corresponds to which difference.
-   1. Download metadata in csv
-      - Find all the metadata csv file in ```/metadata csv``` and download.
+   Now we need to add the coordinates of the assets in the picture so that the game knows which asset corresponds to which difference. You can choose to do it by:
+   1. **upload metadata csv file**
+      - Find all the metadata csv file in ```/public/metadata csv/``` and download.
       - Go to the ```Metadata&Tags``` tab of the asset or on the dashboard.
       - Upload the corresponding csv file to the asset.
-   2. Add metadata manually
+   2. **Add metadata manually**
       - Go to the ```Metadata&Tags``` tab of the asset and add the coordinates of the asset in the picture.
       - The coordinates are in the format ```x```, ```y```, ```width```,```height```.
      ![image](/public/pics/readme/metadata_demo.png)
