@@ -54,10 +54,15 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
     ![image](/public/pics/readme/assettag_demo.png)
 3. **Add Metadata to Assets**
    Now we need to add the coordinates of the assets in the picture so that the game knows which asset corresponds to which difference.
-   - Go to the ```Metadata&Tags``` tab of the asset and add the coordinates of the asset in the picture.
-   - The coordinates are in the format ```x```, ```y```, ```width```,```height```.
-  ![image](/public/pics/readme/metadata_demo.png)
-   - For reference, I used these as the coordinates for all my assets:
+   1. Download metadata in csv
+      - Find all the metadata csv file in ```/metadata csv``` and download.
+      - Go to the ```Metadata&Tags``` tab of the asset or on the dashboard.
+      - Upload the corresponding csv file to the asset.
+   2. Add metadata manually
+      - Go to the ```Metadata&Tags``` tab of the asset and add the coordinates of the asset in the picture.
+      - The coordinates are in the format ```x```, ```y```, ```width```,```height```.
+     ![image](/public/pics/readme/metadata_demo.png)
+      - For reference, I used these as the coordinates for all my assets:
 
         |Animal   |x        |y        |width    |height   |
         |---------|---------|---------|---------|---------|
@@ -68,22 +73,28 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
         |Duck     |550      |410      |110      |95       |
         |Chicken  |270      |115      |105      |120      |
 
+4. **Add Tags to Picture**
+   No we need to add tags to your picture set. 
+   - Click on your picture, go to ```Metadata & Tags```Add three tags to your picture - ```sdf```, ```set<set number>``` and ```pic```.
+     - ```sdf``` tag is used to identify the picture as a spot the difference picture.
+     - ```set<set number>``` tag is used to identify the set of images and 3D models, be sure to name the same asset with the same set number as the image.
+     - ```pic``` tag is used to identify the picture.
     
-1. **Fetch the your Echo3D API keys:**
+5. **Fetch the your Echo3D API keys:**
     Create a ```bash``` file named ```.env``` in the root directory of the project and add your ```API_KEY``` and ```SEC_KEY``` as follows:
     ```bash
     API_KEY=<your-api-key>
     SEC_KEY=<your-api-secret>
     ```
-2. **Install dependencies:**
+6. **Install dependencies:**
     ```bash
     npm install
     ```
-3. **Start the server:**
+7. **Start the server:**
     ```bash
     node server.js
-    ```
-4. **Open the game in your browser:**
+   ```
+8. **Open the game in your browser:**
     ```bash
     http://localhost:3000
     ```
