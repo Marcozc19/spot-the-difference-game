@@ -62,7 +62,7 @@ This project demonstrates a "Spot the Difference" game integrated with AR compon
       - Go to the ```Metadata&Tags``` tab of the asset and add the coordinates of the asset in the picture.
       - The coordinates are in the format ```x```, ```y```, ```width```,```height```.
      ![image](/public/pics/readme/metadata_demo.png)
-      - For reference, I used these as the coordinates for all my assets:
+      - For reference, the game used these as the coordinates for all assets:
 
         |Animal   |x        |y        |width    |height   |
         |---------|---------|---------|---------|---------|
